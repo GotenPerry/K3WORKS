@@ -14,7 +14,7 @@ function actualizarCarrito() {
   lista.innerHTML = "";
   carrito.forEach((item) => {
     const li = document.createElement("li");
-    li.textContent = `${item.nombre} - $${item.precio.toFixed(2)}`;
+    li.textContent = `€{item.nombre} - $${item.precio.toFixed(2)}`;
     lista.appendChild(li);
   });
 
