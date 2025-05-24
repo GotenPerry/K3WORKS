@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>K3Works</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+    <header>
+        <h1>K3Works</h1>
+        <nav>
+            <a href="https://k3works.es" target="_blank">Visita k3works.es</a>
+        </nav>
+    </header>
+   
+    <main>
+        <section class="producto">
+            <img src="producto1.jpg" alt="Producto 1" />
+            <h2>Producto 1</h2>
+            <p>$10.00</p>
+            <button onclick="agregarAlCarrito('Producto 1', 10)">Agregar al carrito</button>
+        </section>
+
+        <section class="producto">
+            <img src="producto2.jpg" alt="Producto 2" />
+            <h2>Producto 2</h2>
+            <p>$15.00</p>
+            <button onclick="agregarAlCarrito('Producto 2', 15)">Agregar al carrito</button>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Carrito</h2>
+        <ul id="carrito-lista"></ul>
+        <p>Total: $<span id="total">0</span></p>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
